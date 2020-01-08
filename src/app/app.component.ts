@@ -7,14 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cicd';
-
-  points = 1;
+  imgUrl = 'https://picsum.photos/200';
+  points = 0;
+  name: string;
+  userName: string;
 
   plus1() {
-    this.points++;
+    this.points += 1;
   }
 
   reset() {
     this.points = 0;
+  }
+  greet(updatValue) {
+    this.userName = updatValue;
   }
 }

@@ -1,10 +1,21 @@
 <h1>{{title}}</h1>
 
 <div>
-  Points: <span>{{points}}</span>
+  <img [src]="imgUrl" alt="Image">
 </div>
 
 <button (click)="plus1()">Plus 1</button>
 <button (click)="reset()">Reset</button>
 <button (click)="reset()">Reset</button>
+<p>Clicked {{points}}</p>
+
+<div>
+  <input type="text" name="" [(ngModel)]="name">
+  <p> Welcome {{name}} </p>
+</div>
+<div>
+  <input type="text" name="" [ngModel]="userName" (ngModelChange)="greet($event)">
+  <p> Welcome {{userName}} </p>
+</div>
+
 <router-outlet></router-outlet>
