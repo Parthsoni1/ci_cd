@@ -1,0 +1,28 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "firstName": "Parth",
+      "lastName": "Soni",
+      "contact": 982635,
+      "designtion": "Mean stack"
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "firstName": "Parth",
+      "lastName": "Soni",
+      "contact": "5465",
+      "designtion": "Mobile"
+    },
+    {
+      "id": 2,
+      "firstName": "Parth",
+      "lastName": "Soni",
+      "contact": "dsfdsf",
+      "whoom": "",
+      "designtion": "dfgdfg"
+    }
+  ]
+}

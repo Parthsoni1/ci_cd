@@ -1,0 +1,47 @@
+
+<!-- Default form contact -->
+    <form class="text-center border border-light p-5">
+
+      <p class="h4 mb-4">Take Appointment Here</p>
+
+      <!-- Name -->
+      <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="firstName" name="firstName"
+        [(ngModel)]="staffService.currentUser.firstName">
+      <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="lastName" name="lastName"
+        [(ngModel)]="staffService.currentUser.lastName">
+
+      <!-- Email -->
+      <input type="email" id="defaultContactFormEmail" class="form-control mb-4" name="contact"
+        placeholder="Contct Number" [(ngModel)]="staffService.currentUser.contact">
+
+      <!-- Subject -->
+      <label>Subject</label>
+      <select class="browser-default custom-select mb-4" name="whoom" [(ngModel)]="staffService.currentUser.whoom">
+        <option value="" disabled>Choose option</option>
+        <option value="1" *ngFor="let item of allData" selected>{{item.firstName}} {{item.lastName}} </option>
+
+      </select>
+
+      <!-- Message -->
+      <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"
+          name="designtion" [(ngModel)]="staffService.currentUser.designtion"></textarea>
+      </div>
+
+      <!-- Copy -->
+      <!-- <div class="row">
+      <div class="col-md-6 mx-auto d-flex justify-content-center">
+        <mdb-checkbox [default]="true" class="mb-4">Send me a copy of this message</mdb-checkbox>
+      </div>
+    </div> -->
+
+
+      <!-- Send button -->
+      <button class="btn btn-info btn-block" block="true" (click)="createAndUpdte(staffService.currentUser)"
+        type="submit">Send</button>
+        <button class="btn btn-primary btn-lg btn-block" (click)="clearEmployee()">
+          <i class="fa fa-retweet"></i>
+          CLEAR
+        </button>
+    </form>
+<!-- Default form contact -->

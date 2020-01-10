@@ -1,9 +1,53 @@
-<h1>{{title}}</h1>
+<!-- Interpolation -->
+<!-- <h1>{{title}}</h1> -->
+<!-- Property Binding -->
+<!-- <div>
+  <img [src]="imgUrl" alt="Image">
+</div> -->
+<!-- event Binding -->
+<!-- <button (click)="plus1()">Plus 1</button>
+<button (click)="reset()">Reset</button>
 
-<div>
-  Points: <span>{{points}}</span>
+<p>Clicked {{points}}</p> -->
+
+<!-- 2 way Binding -->
+<!-- <div>
+  <input #nameRef type="text" name="" [(ngModel)]="name">
+  <p> Welcome {{name}} </p>
+</div> -->
+<!-- Split Binding -->
+<!-- <div>
+  <input type="text" name="" [ngModel]="userName" (ngModelChange)="greet($event)">
+  <p> Welcome {{userName}} </p>
+</div> -->
+<!-- Getter Setter -->
+<!-- <div>
+  <input type="text" [(ngModel)]="customerName">
+  <p>customerName-  {{customerName}}</p>
 </div>
 
-<button (click)="plus1()">Plus 1</button>
-<button (click)="reset()">Reset  </button>
+<div>
+  <button (click)="userLoggedIn=true">login</button>
+  <button (click)="userLoggedIn=false">logout</button>
+  {{userLoggedIn}}
+</div> -->
+<!-- parent to child & child to parent -->
+
+<!-- <button  (click)="greetStudent()">Greet Student</button>
+<button  (click)="greetTeacher()">Greet Teacher</button>
+
+<app-child (greetEvent)="greet($event)" #child [loggedIn]="userLoggedIn"></app-child>
+{{child.name}} -->
+<!-- parent to child -->
+<!-- <button  (click)="child.greetVishwas()">Greet</button> -->
+<div class="row">
+  <div class="col-6">
+    <app-appoinment></app-appoinment>
+  </div>
+  <div class="col-6">
+    <app-user-list></app-user-list>
+  </div>
+
+</div>
+
 <router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+{
+    "Employee": [
+        {
+            "id": 1,
+            "firstName": "Parth",
+            "lastName": "soni",
+            "contct": 41561,
+            "designtion": "Developer"
+        },
+        {
+            "id": 1,
+            "firstName": "Mit",
+            "lastName": "Shah",
+            "contct": 982635,
+            "designtion": "Mobile"
+        }
+    ]
+}
