@@ -17,6 +17,6 @@ pipelines:
          - npm run test:ci
          - npm run e2e:ci
          - npm run build:prod
-         - pipe: atlassian/firebase-deploy:0.3.0
+         - pipe: atlassian/firebase-deploy:0.3.6
            variables:
              FIREBASE_TOKEN: '$FIREBASE_TOKEN_CI'
