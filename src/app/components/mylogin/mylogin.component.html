@@ -1,0 +1,29 @@
+
+<!-- Default form contact -->
+<form class="text-center border border-light p-5">
+
+    <p class="h4 mb-4">Take Appointment Here</p>
+
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="E-Mail" name="firstName"
+      [(ngModel)]="staffService.loginForm.email ">
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Password" name="lastName"
+      [(ngModel)]="staffService.loginForm.password">
+
+    <!-- Copy -->
+    <!-- <div class="row">
+    <div class="col-md-6 mx-auto d-flex justify-content-center">
+      <mdb-checkbox [default]="true" class="mb-4">Send me a copy of this message</mdb-checkbox>
+    </div>
+  </div> -->
+
+  <a (click)="goToComponent()">forgot password</a>
+    <!-- Send button -->
+    <button class="btn btn-primary btn-lg btn-block" (click)="login(staffService.loginForm)"
+      >Send</button>
+      <button class="btn btn-primary btn-lg btn-block" (click)="login()">
+        <i class="fa fa-retweet"></i>
+        CLEAR
+      </button>
+  </form>
+<!-- Default form contact -->

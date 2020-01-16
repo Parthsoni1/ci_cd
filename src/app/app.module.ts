@@ -11,12 +11,22 @@ import { AppoinmentComponent } from './components/appoinment/appoinment.componen
 import { UserListComponent } from './components/user-list/user-list.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { LoginComponent } from './components/login/login.component';
+import { MyloginComponent } from './components/mylogin/mylogin.component';
+import { RegesterComponent } from './components/regester/regester.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
     AppoinmentComponent,
-    UserListComponent
+    UserListComponent,
+    LoginComponent,
+    MyloginComponent,
+    RegesterComponent,
+    HeaderComponent,
+    ForgotpassComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+<form class="text-center border border-light p-5" #details="ngForm" >
+    <p class="h4 mb-4">Enter Belove Details</p>
+
+    <!-- Email -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="E-Mail" name="lastName"
+      [(ngModel)]="details.email">
+
+    <!-- Contct Number -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" name="contact"
+      placeholder="Contct Number" [(ngModel)]="details.contactNumber">
+      
+    <input type="datetime-local" id="defaultContactFormName" class="form-control mb-4" placeholder="birthDate" name="birthDate"
+      [(ngModel)]="details.birthDate">
+
+    <!-- Send button -->
+    <button class="btn btn-info btn-block" block="true" (click)="checkDetail(details)" type="submit">Send</button>
+      <button class="btn btn-primary btn-lg btn-block" (click)="clearEmployee()"><i class="fa fa-retweet"></i>CLEAR</button>
+  </form>

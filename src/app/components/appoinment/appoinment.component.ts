@@ -41,9 +41,12 @@ export class AppoinmentComponent implements OnInit {
       id: null,
       firstName: '',
       lastName: '',
-      contact: 0,
+      email: '',
+      contactNumber: 0,
       whoom: '',
-      designtion: ''
+      designtion: '',
+      birthDate: '',
+      password: ''
     };
   }
 }

@@ -4,8 +4,88 @@
       "id": 1,
       "firstName": "Parth",
       "lastName": "Soni",
-      "contact": 982635,
+      "contactNumber": 982635,
       "designtion": "Mean stack"
+    },
+    {
+      "id": 3,
+      "firstName": "Rohit",
+      "lastName": "shrma",
+      "contactNumber": 54658746544,
+      "designtion": "Full stack"
+    },
+    {
+      "id": 4,
+      "firstName": "Sachin",
+      "lastName": "Ten",
+      "contactNumber": 486788413,
+      "designtion": "Cricketer",
+      "birthDate": "1992-01-30T01:00"
+    },
+    {
+      "id": 5,
+      "firstName": "Virat",
+      "lastName": "Shrma",
+      "contactNumber": 98263056475,
+      "designtion": "Bowler",
+      "birthDate": "1991-01-30T01:00"
+    },
+    {
+      "id": 6,
+      "firstName": "Parth",
+      "lastName": "Soni",
+      "contactNumber": "564986",
+      "whoom": "",
+      "designtion": "Employee",
+      "birthDate": "1990-01-30T01:00"
+    },
+    {
+      "id": 7,
+      "firstName": "Mit",
+      "lastName": "Shah",
+      "contactNumber": "564986265",
+      "whoom": "",
+      "designtion": "Employee",
+      "birthDate": "1995-01-30T01:00"
+    },
+    {
+      "id": 8,
+      "firstName": "Mit",
+      "lastName": "so",
+      "contactNumber": "044",
+      "whoom": "",
+      "designtion": "Employee",
+      "birthDate": "2020-01-30T01:00"
+    },
+    {
+      "id": 9,
+      "firstName": "Mit",
+      "lastName": "so",
+      "contactNumber": "044",
+      "whoom": "",
+      "designtion": "Employee",
+      "birthDate": "2020-01-30T01:00"
+    },
+    {
+      "id": 10,
+      "firstName": "Parth",
+      "lastName": "Soni",
+      "contactNumber": "564986",
+      "whoom": "",
+      "designtion": "Employee",
+      "birthDate": "1995-05-12T23:59",
+      "password": "sparth11"
+    },
+    {
+      "id": 11,
+      "firstName": "Parth",
+      "lastName": "Soni",
+      "email": "Parth@gmail.com",
+      "contactNumber": "8200405212",
+      "whoom": "",
+      "designtion": "",
+      "birthDate": "",
+      "password": "sparth11"
     }
   ],
   "Users": [
@@ -23,6 +103,54 @@
       "contact": "dsfdsf",
       "whoom": "",
       "designtion": "dfgdfg"
+    },
+    {
+      "id": 3,
+      "firstName": "",
+      "lastName": "",
+      "contact": null,
+      "whoom": "",
+      "designtion": ""
+    },
+    {
+      "id": 4,
+      "firstName": "",
+      "lastName": "",
+      "contact": null,
+      "whoom": "",
+      "designtion": ""
+    },
+    {
+      "id": 5,
+      "firstName": "",
+      "lastName": "",
+      "contact": 0,
+      "whoom": "",
+      "designtion": ""
+    },
+    {
+      "id": 6,
+      "firstName": "",
+      "lastName": "",
+      "contact": null,
+      "whoom": "",
+      "designtion": ""
+    },
+    {
+      "id": 7,
+      "firstName": "",
+      "lastName": "",
+      "contact": null,
+      "whoom": "",
+      "designtion": ""
+    },
+    {
+      "id": 8,
+      "firstName": "",
+      "lastName": "",
+      "contact": 0,
+      "whoom": "",
+      "designtion": ""
     }
   ]
 }

@@ -2,7 +2,10 @@ export class Data {
     id: number;
     firstName: string;
     lastName: string;
-    contact: number;
+    email: string;
+    contactNumber: number;
     whoom: string;
     designtion: string;
+    birthDate: string;
+    password: string;
 }
