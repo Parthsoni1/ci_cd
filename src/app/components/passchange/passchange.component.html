@@ -1,0 +1,26 @@
+<!-- Default form contact -->
+<form class="text-center border border-light p-5" #password="ngForm">
+
+    <p class="h4 mb-4">Take Appointment Here</p>
+
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Password" name="password"
+      [(ngModel)]="password.password ">
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Confirm password" name="confpass"
+      [(ngModel)]="password.confpass">
+
+    <!-- Copy -->
+    <!-- <div class="row">
+    <div class="col-md-6 mx-auto d-flex justify-content-center">
+      <mdb-checkbox [default]="true" class="mb-4">Send me a copy of this message</mdb-checkbox>
+    </div>
+  </div> -->
+
+    <!-- Send button -->
+    <button class="btn btn-primary btn-lg btn-block" (click)="passChange(password)"
+      >Send</button>
+      <button class="btn btn-primary btn-lg btn-block" (click)="login()">
+        <i class="fa fa-retweet"></i>
+        CLEAR
+      </button>
+  </form>

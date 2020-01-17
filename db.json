@@ -74,7 +74,7 @@
       "whoom": "",
       "designtion": "Employee",
       "birthDate": "1995-05-12T23:59",
-      "password": "sparth11"
+      "password": "sparth111"
     },
     {
       "id": 11,
@@ -84,6 +84,17 @@
       "contactNumber": "8200405212",
       "whoom": "",
       "designtion": "",
+      "birthDate": "",
+      "password": "sparth111"
+    },
+    {
+      "id": 12,
+      "firstName": "rits",
+      "lastName": "soni",
+      "email": "radhika@gmail.com",
+      "contactNumber": "8200405212",
+      "whoom": "",
+      "designtion": "Management",
       "birthDate": "",
       "password": "sparth11"
     }

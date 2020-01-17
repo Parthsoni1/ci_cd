@@ -16,6 +16,7 @@ import { MyloginComponent } from './components/mylogin/mylogin.component';
 import { RegesterComponent } from './components/regester/regester.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
+import { PasschangeComponent } from './components/passchange/passchange.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { ForgotpassComponent } from './components/forgotpass/forgotpass.componen
     MyloginComponent,
     RegesterComponent,
     HeaderComponent,
-    ForgotpassComponent
+    ForgotpassComponent,
+    PasschangeComponent
   ],
   imports: [
     BrowserModule,

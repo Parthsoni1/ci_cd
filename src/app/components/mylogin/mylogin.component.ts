@@ -11,7 +11,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class MyloginComponent implements OnInit {
   allData: Data[];
   myData: any;
-  constructor(public staffService: StaffService,   private router: Router,) {}
+  constructor(public staffService: StaffService,   private router: Router) {}
 
   ngOnInit() {}
 
@@ -33,6 +33,7 @@ export class MyloginComponent implements OnInit {
 
       if (this.myData.password === loginForm.password) {
         console.log("you are welcome");
+        localStorage.setItem('email', this.myData.email );
       } else {
         console.log("get lost");
       }

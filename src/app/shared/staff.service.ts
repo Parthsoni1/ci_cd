@@ -47,4 +47,13 @@ export class StaffService {
   updateUser(user) {
     return this.http.put<Data[]>(`${this.mockUrl}Users` + '/' + user.id, user, hederOption);
   }
+  checkMail(email) {
+    return this.http.get<Data[]>(`${this.mockUrl}Employee?email=` + email, hederOption);
+  }
+  changePass(id, pass) {
+    return this.http.patch<Data[]>(`${this.mockUrl}Employee/` + id, pass, hederOption);
+  }
+  getEmployee(dept) {
+    return this.http.get<Data[]>(`${this.mockUrl}Employee?designtion=` + dept);
+  }
 }

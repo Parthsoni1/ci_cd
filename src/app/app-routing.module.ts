@@ -5,15 +5,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { AppoinmentComponent } from './components/appoinment/appoinment.component';
 import { RegesterComponent } from './components/regester/regester.component';
 import { ForgotpassComponent } from './components/forgotpass/forgotpass.component';
+import { PasschangeComponent } from './components/passchange/passchange.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'appoint', pathMatch: 'full' },
   { path: 'appoint', component: AppoinmentComponent },
   { path: 'forgotpass', component: ForgotpassComponent },
+  { path: 'changepass/:id', component: PasschangeComponent },
 
   {
-    path: 'header', component: HeaderComponent,
+    path: '', component: HeaderComponent,
     children: [
       { path: 'login', component: MyloginComponent },
       { path: 'regester', component: RegesterComponent },

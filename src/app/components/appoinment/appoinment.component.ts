@@ -8,8 +8,9 @@ import { Data } from 'src/app/model/data.model';
   styleUrls: ['./appoinment.component.css']
 })
 export class AppoinmentComponent implements OnInit {
-
+  Designation = ['Employee', 'Management', 'Security'];
   allData: Data[];
+  staffData = [];
   constructor(public staffService: StaffService) { }
 
   ngOnInit() {
@@ -34,6 +35,13 @@ export class AppoinmentComponent implements OnInit {
   updateUser(emp: Data) {
     this.staffService.updateUser(emp)
     .subscribe();
+  }
+  getEmployee(department) {
+    this.staffService.getEmployee(department)
+    .subscribe(res => {
+      console.log(res);
+      this.staffData = res;
+    })
   }
 
   clearEmployee() {

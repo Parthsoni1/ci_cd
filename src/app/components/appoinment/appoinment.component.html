@@ -15,11 +15,16 @@
         placeholder="Contct Number" [(ngModel)]="staffService.currentUser.contactNumber">
 
       <!-- Subject -->
-      <label>Subject</label>
-      <select class="browser-default custom-select mb-4" name="whoom" [(ngModel)]="staffService.currentUser.whoom">
-        <option value="" disabled>Choose option</option>
-        <option value="1" *ngFor="let item of allData" selected>{{item.firstName}} {{item.lastName}} </option>
+      <label>Department</label>
+      <select class="browser-default custom-select mb-4" name="whoom" (change)="getEmployee(staffService.currentUser.whoom)" [(ngModel)]="staffService.currentUser.whoom">
+        <option disabled>Choose option</option>
+        <option  *ngFor="let item of Designation" selected>{{item}} </option>
+      </select>
 
+      <label>Select Staff</label>
+      <select class="browser-default custom-select mb-4" name="whoom" (change)="getEmployee(staffService.currentUser.whoom)" [(ngModel)]="staffService.currentUser.whoom">
+        <option disabled>Choose option</option>
+        <option  *ngFor="let item of staffData" selected>{{item.firstName}} {{item.lastName}} </option>
       </select>
 
       <!-- Message -->
